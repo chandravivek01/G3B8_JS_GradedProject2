@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Register User</title>
+</head>
+
+<body>
+    <form id="user-form" class="box-shadow">
+        <div class="title">Single User Interface</div>
+        <input type="text" id="username" placeholder="username" size="40" />
+        <input type="password" id="password" placeholder="password" size="40" />
+        <input type="password" id="confirmPassword" placeholder="confirm password" size="40" required />
+
+        <div class="button-box">
+            <button onclick="saveCredentials()">Submit</button>
+        </div>
+        <a href="index.html">Back to Login</a>
+    </form>
+    <script src="register.js"></script>
+</body>
+
+</html>

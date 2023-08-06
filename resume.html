@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resume.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Applicant Resume</title>
+</head>
+
+<body>
+    <div class="menu">
+        <button class="button" id="previous">Previous</button>
+        <input type="text" id="search" size="50" placeholder="search for keywords to filter the resume">
+        <button class="button" id="next">Next</button>
+    </div>
+
+    <div class="mobile-menu">
+        <button class="button" id="mobile-previous">Previous</button>
+        <input type="text" id="mobile-search" size="50" placeholder="search for keywords to filter the resume">
+        <button class="button" id="mobile-next">Next</button>
+    </div>
+
+    <div class="container box-shadow">
+
+        <div id="no-search-result">
+            <div class="center">
+                <i class="fa-solid fa-face-frown fa-5x"></i>
+            </div>
+            <div class="heading3 center">No such results found</div>
+        </div>
+
+        <div id="resultList">
+
+            <header id="intro">
+                <div class="name-and-role">
+                    <div id="employee-name" class="center heading1">
+
+                    </div>
+                    <p class="center">Applied for: <span id="applied-for"></span></p>
+                </div>
+                <div id="employee-icon">
+                    <i class="fa-solid fa-user fa-5x"></i>
+                </div>
+            </header>
+
+            <div class="sub-container">
+
+                <aside id="short-bio">
+                    <p class="heading3 bg-color">Personal Information</p>
+                    <br>
+                    <div class="aside-entry">
+                        <div id="info-list" class="aside-bio right">
+
+                        </div>
+                        <br>
+                    </div>
+                    <p class="heading3 bg-color">Technical Skills</p>
+                    <br>
+                    <div class="aside-entry">
+                        <ul id="skill-list" class="aside-bio right">
+
+                        </ul>
+                        <br>
+                    </div>
+                    <p class="heading3 bg-color">Hobbies</p>
+                    <br>
+                    <div class="aside-entry">
+                        <ul id="hobby-list" class="aside-bio right">
+
+                        </ul>
+                    </div>
+                </aside>
+
+                <div class="main-content">
+                    <section>
+                        <p class="heading2">Work Experience in previous company</p>
+                        <div id="work">
+
+                        </div>
+                    </section>
+                    <section>
+                        <p class="heading2">Projects</p>
+                        <div id="projects">
+                            <span id="project-bold"></span><span id="project-description"></span>
+                        </div>
+                    </section>
+                    <section>
+                        <p class="heading2">Education</p>
+                        <div id="education">
+
+                        </div>
+                    </section>
+                    <section>
+                        <p class="heading2">Internship</p>
+                        <div id="internship">
+
+                        </div>
+                    </section>
+                    <section class="">
+                        <p class="heading2">Achievements</p>
+                        <div id="achievements">
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- mobile-view for aside-section -->
+            <aside id="mobile-short-bio">
+                <p class="heading3 bg-color">Personal Information</p>
+                <br>
+                <div class="aside-entry">
+                    <div id="mobile-info-list" class="aside-bio right">
+
+                    </div>
+                    <br>
+                </div>
+                <p class="heading3 bg-color">Technical Skills</p>
+                <br>
+                <div class="aside-entry">
+                    <ul id="mobile-skill-list" class="aside-bio right">
+
+                    </ul>
+                    <br>
+                </div>
+                <p class="heading3 bg-color">Hobbies</p>
+                <br>
+                <div class="aside-entry">
+                    <ul id="mobile-hobby-list" class="aside-bio right">
+
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- mobile-view for detailed main-section -->
+            <div class="mobile-main-content">
+                <section>
+                    <p class="heading2">Work Experience in previous company</p>
+                    <div id="mobile-work">
+
+                    </div>
+                </section>
+                <section>
+                    <p class="heading2">Projects</p>
+                    <div id="projects">
+                        <span id="mobile-project-bold"></span><span id="mobile-project-description"></span>
+                    </div>
+                </section>
+                <section>
+                    <p class="heading2">Education</p>
+                    <div id="mobile-education">
+
+                    </div>
+                </section>
+                <section>
+                    <p class="heading2">Internship</p>
+                    <div id="mobile-internship">
+
+                    </div>
+                </section>
+                <section class="">
+                    <p class="heading2">Achievements</p>
+                    <div id="mobile-achievements">
+
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </div>
+    <script src="resume.js" type="module"></script>
+</body>
+
+</html>
